@@ -9,7 +9,7 @@ RUN wget -o oracle-database-xe-18c-1.0-1.x86_64.rpm https://download.oracle.com/
 # && yum install -y mongodb-org \ 
 && rm -f *.rpm
 
-EXPOSE 1521 27017
+EXPOSE 1521 5500
 CMD /etc/init.d/oracle-xe-18c configure
 
 
